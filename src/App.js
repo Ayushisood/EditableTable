@@ -27,6 +27,7 @@ function App() {
             delete obj.discountPercentage;
             delete obj.thumbnail;
             delete obj.images;
+            return obj;
           });
 
           // console.log(dataArr);
