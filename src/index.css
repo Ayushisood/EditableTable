@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* custom class styling  */
+@layer components {
+  .tableHeading {
+    @apply text-sm font-medium text-white px-6 py-4;
+  }
+  .tableCol {
+    @apply px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 bg-blue-100;
+  }
+  .inputField {
+    @apply border-b-2 border-gray-700 m-4 bg-gray-200 p-2 rounded-md outline-none;
+  }
 }
